@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -8,23 +9,23 @@
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="for-label text-dark">Name</label>
-                    <input type="text" class="form-control">
+                    <input name="Name"[(ngModel)]="Name" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <label for="" class="for-label text-dark">Book Title</label>
-                    <input type="text" class="form-control">
+                    <label for="" class="for-label text-dark">BookTitle</label>
+                    <input name="BookTitle"[(ngModel)]="BookTitle" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <label for="" class="for-label text-dark">Date of issue</label>
-                    <input type="text" class="form-control">
+                    <label for="" class="for-label text-dark">Dateofissue</label>
+                    <input name="Dateofissue"[(ngModel)]="Dateofissue" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <label for="" class="for-label text-dark">Membership Number</label>
-                    <input type="text" class="form-control">
+                    <label for="" class="for-label text-dark">MembershipNumber</label>
+                    <input name="MembershipNumber"[(ngModel)]="MembershipNumber" type="text" class="form-control">
                 </div>
                 
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                   <button class="btn btn-success text-center">Submit</button>
+                   <button (click)="readValues()" class="btn btn-success text-center">Submit</button>
                 </div>
             </div>
         </div>
