@@ -1,47 +1,46 @@
+<app-navbar></app-navbar>
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3 mt-4">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="for-label text-dark">Book Title</label>
-                    <input type="text" class="form-control">
+                    <label for="" class="for-label text-dark">BookTitle</label>
+                    <input name="BookTitle"[(ngModel)]="BookTitle" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="for-label text-dark">Author</label>
-                    <input type="text" class="form-control">
+                    <input name="Author"[(ngModel)]="Author" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="for-label text-dark">Description</label>
-                    <input type="text" class="form-control">
+                    <input name="Description"[(ngModel)]="Description" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="for-label text-dark">Publisher</label>
-                    <input type="text" class="form-control">
+                    <input name="Publisher"[(ngModel)]="Publisher" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                    <label for="" class="for-label text-dark">Language</label>
-                    <input type="text" class="form-control">
+                    <input name="Language"[(ngModel)]="Language" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="for-label text-dark">Distributor</label>
-                    <input type="text" class="form-control">
-
+                    <input name="Distributor"[(ngModel)]="Distributor" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="for-label text-dark">Released Year</label>
-                    <input type="text" class="form-control">
+                    <label for="" class="for-label text-dark">ReleasedYear</label>
+                    <input name="ReleasedYear"[(ngModel)]="ReleasedYear" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="for-label text-dark">Username</label>
-                    <input type="text" class="form-control">
-
+                    <input name="Username"[(ngModel)]="Username" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="for-label text-dark">Price</label>
-                    <input type="password" class="form-control">
+                    <label for="" class="for-label text-dark">Password</label>
+                    <input name="Password"[(ngModel)]="Password" type="password" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-center">
-                    <button class="btn btn-success text-dark">Add</button>
+                    <button (click)="readValues()" class="btn btn-success text-dark">Add</button>
                 </div>
             </div>
         </div>

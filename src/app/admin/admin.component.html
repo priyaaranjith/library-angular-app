@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -8,25 +9,16 @@
 
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xx-12">
                     <label for="" class="for-label text-dark">Username</label>
-                    <input type="text" class="form-control">
+                    <input name="Username"[(ngModel)]="Username" type="text" class="form-control">
                 </div>
 
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xx-12">
                     <label for="" class="for-label text-dark">Password</label>
-                    <input type="text" class="form-control">
+                    <input name ="Password"[(ngModel)]="Password" type="text" class="form-control">
                 </div>
 
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xx-12 text-center">
-                    <button class="btn btn-success">Login</button>
-                </div>
-
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xx-12 text-center">
-                    <a href="http://127.0.0.1:5500/UserRegistration.html">User Registration</a>
-                </div>
-
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xx-12 text-center">
-                    <a href="">User Login</a>
-
+                    <button (click)="readValues()" class="btn btn-success">Login</button>
                 </div>
             </div>
         </div>
